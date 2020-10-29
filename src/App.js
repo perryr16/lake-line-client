@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Forecast from "./components/Forecast/Forecast";
 
 function App() {
   return (
@@ -7,7 +8,7 @@ function App() {
       <header className="App-header">
         <h1>Lake Line</h1>
         <main>
-          {/* add weather fetching component */}
+          <Forecast />
           {/* add trail fetching component */}
         </main>
         <footer>
