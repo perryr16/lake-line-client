@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Forecast from "./components/Forecast/Forecast";
+import Trails from "./components/Trails/Trails";
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
         <h1>Lake Line</h1>
         <main>
           <Forecast />
-          {/* add trail fetching component */}
+          <Trails />
         </main>
         <footer>
           Page created by Ross Perry
