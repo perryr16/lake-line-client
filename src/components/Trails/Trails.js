@@ -2,14 +2,14 @@ import React, { useState} from 'react';
 import Trail from './Trail'
 
 const Trails = () => {
-  let [responseObj, setResponseObj] = useState({})
+  let [trailResponseObj, setTrailResponseObj] = useState({})
   const getTrails = () => {
     fetch("http://localhost:4000/trails", {
       "method":"GET"
     })
     .then(response => response.json())
     .then(response => {
-      setResponseObj(response.results)
+      setTrailResponseObj(response.results)
     })
     .catch(err => {
       console.log(err)
@@ -20,13 +20,12 @@ const Trails = () => {
     <div class="">
       <h2>Trails in DB</h2>
       <button onClick={getTrails}>GetTrails</button>
-        {/* {JSON.stringify(responseObj)}  */}
-        <Trail
-          responseObj={responseObj}
-        />
+      <Trail
+        trailResponse={trailResponseObj}
+      />
 
         {/* {JSON.stringify(allTrails)} */}
-        {/* {JSON.stringify(responseObj.results[0])} */}
+        {/* {JSON.stringify(trailResponseObj.results[0])} */}
         {/* {responseObj.results} */}
         {/* {responseObj.results.map(trail => <li>{trail.name}</li>)} */}
         {/* {JSON.stringify(responseObj.results.map(trail => <li>{trail.name}</li>))} */}
