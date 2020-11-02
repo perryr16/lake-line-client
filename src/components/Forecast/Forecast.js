@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Conditions from '../Conditions/Conditions';
 
 const Forecast = () => {
   let [responseObj, setResponseObj] = useState({})
@@ -13,6 +14,7 @@ const Forecast = () => {
       .then(response => response.json())
       .then(response => {
         setResponseObj(response)
+        // console.log(responseObj)
       })
       .catch(err => {
         console.log(err);
@@ -21,10 +23,10 @@ const Forecast = () => {
   return (
     <div class="">
       <h2>Find Current Weather Conditions</h2>
-      <div class="">
-        {JSON.stringify(responseObj)}
-      </div>
       <button onClick={getForecast}>Get Forecast</button>
+      <Conditions 
+        responseObj={responseObj}
+        />
     </div>
   )
 }
