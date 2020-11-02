@@ -20,7 +20,6 @@ const Trails = () => {
     <div class="">
       <h2>Trails in DB</h2>
       <button onClick={getTrails}>GetTrails</button>
-      <div class="allTrails">
         {/* {JSON.stringify(responseObj)}  */}
         <Trail
           responseObj={responseObj}
@@ -31,7 +30,6 @@ const Trails = () => {
         {/* {responseObj.results} */}
         {/* {responseObj.results.map(trail => <li>{trail.name}</li>)} */}
         {/* {JSON.stringify(responseObj.results.map(trail => <li>{trail.name}</li>))} */}
-      </div>
     </div>
   )
 }
