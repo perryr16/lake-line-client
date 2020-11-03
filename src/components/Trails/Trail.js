@@ -3,13 +3,9 @@ import React from 'react';
 
 
 const trail = (props) => {
-  // console.log('cat')
   // if (props.trailResponse.length > 0) {
   //   const names = props.trailResponse.map(trail => trail.name)
-  //   console.log(names)
   // }
-  // console.log(props.trailResponse)
-  // console.log(props.responseObj[0].name)
   let location = '39.4217,-106.0748'
   let latLons = ""
   return (
@@ -19,7 +15,6 @@ const trail = (props) => {
         <p>dog</p>
           {props.trailResponse.forEach(trail =>
           latLons+=`${trail.lat},${trail.lon}||`)}
-          {console.log(latLons)}
           <img class="" src={`https://www.mapquestapi.com/staticmap/v5/map?locations=${latLons}&key=${process.env.REACT_APP_MAP_KEY}`} alt=""></img>
           {props.trailResponse.map(trail => 
           <p>{trail.name} <br></br>
