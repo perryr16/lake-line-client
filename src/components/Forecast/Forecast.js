@@ -15,8 +15,6 @@ const Forecast = () => {
       .then(response => response.json())
       .then(response => {
         setResponseObj(response)
-        console.log(process.env.REACT_APP_RAPID_KEY)
-        console.log(process.env.REACT_APP_MAP_KEY)
       })
       .catch(err => {
         console.log(err);
