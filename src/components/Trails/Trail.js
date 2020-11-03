@@ -14,6 +14,7 @@ const trail = (props) => {
         <div>
           {props.trailResponse.forEach(trail => latLons+=`${trail.lat},${trail.lon}||`)}
           <img class="" src={`https://www.mapquestapi.com/staticmap/v5/map?locations=${latLons}&key=${process.env.REACT_APP_MAP_KEY}`} alt=""></img>
+
           {props.trailResponse.map(trail => 
           <p>{trail.name} <br></br>
           {trail.length} miles  <br></br>
