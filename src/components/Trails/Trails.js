@@ -24,11 +24,6 @@ const Trails = () => {
         trailResponse={trailResponseObj}
       />
 
-        {/* {JSON.stringify(allTrails)} */}
-        {/* {JSON.stringify(trailResponseObj.results[0])} */}
-        {/* {responseObj.results} */}
-        {/* {responseObj.results.map(trail => <li>{trail.name}</li>)} */}
-        {/* {JSON.stringify(responseObj.results.map(trail => <li>{trail.name}</li>))} */}
     </div>
   )
 }

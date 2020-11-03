@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Conditions from '../Conditions/Conditions';
 
+
 const Forecast = () => {
   let [responseObj, setResponseObj] = useState({})
   const getForecast = () => {
@@ -8,20 +9,19 @@ const Forecast = () => {
       "method": "GET",
       "headers": {
         "x-rapidapi-host": "community-open-weather-map.p.rapidapi.com",
-        "x-rapidapi-key": "cc670b05f4msh6a6e141718aa225p1d2171jsn22e5689cf60b"
+        "x-rapidapi-key": process.env.REACT_APP_RAPID_KEY
       }
     })
       .then(response => response.json())
       .then(response => {
         setResponseObj(response)
-        // console.log(responseObj)
       })
       .catch(err => {
         console.log(err);
       });
   }
   return (
-    <div class="">
+    <div>
       <h2>Find Current Weather Conditions</h2>
       <button onClick={getForecast}>Get Forecast</button>
       <Conditions 
