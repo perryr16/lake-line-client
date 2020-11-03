@@ -1,7 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
 import Forecast from "./components/Forecast/Forecast";
-// import Trails from "./components/Trails/Trails";
 import Trails from "./components/Trails/Trails";
 
 
