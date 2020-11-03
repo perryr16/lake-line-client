@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
 import React from 'react';
-require('dotenv').config();
+
 
 const trail = (props) => {
   // console.log('cat')
@@ -18,9 +18,9 @@ const trail = (props) => {
         <div>
         <p>dog</p>
           {props.trailResponse.forEach(trail =>
-          latLons+=gs`${trail.lat},${trail.lon}||`)}
+          latLons+=`${trail.lat},${trail.lon}||`)}
           {console.log(latLons)}
-          <img class="" src={`https://www.mapquestapi.com/staticmap/v5/map?locations=${latLons}&key=bW5J6NVA1gT64FrRBRViGqTYVcfkUq7F`} alt=""></img>
+          <img class="" src={`https://www.mapquestapi.com/staticmap/v5/map?locations=${latLons}&key=${process.env.MAP_KEY}`} alt=""></img>
           {props.trailResponse.map(trail => 
           <p>{trail.name} <br></br>
           {trail.length} miles  <br></br>
