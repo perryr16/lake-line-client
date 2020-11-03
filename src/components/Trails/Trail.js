@@ -12,9 +12,7 @@ const trail = (props) => {
     <div>
       {props.trailResponse.length > 1 ?
         <div>
-        <p>dog</p>
-          {props.trailResponse.forEach(trail =>
-          latLons+=`${trail.lat},${trail.lon}||`)}
+          {props.trailResponse.forEach(trail => latLons+=`${trail.lat},${trail.lon}||`)}
           <img class="" src={`https://www.mapquestapi.com/staticmap/v5/map?locations=${latLons}&key=${process.env.REACT_APP_MAP_KEY}`} alt=""></img>
           {props.trailResponse.map(trail => 
           <p>{trail.name} <br></br>
@@ -22,9 +20,6 @@ const trail = (props) => {
           {trail.lat}, {trail.lon}
           </p>
           )}
-        
-        <p>{JSON.stringify(props.trailResponse[0].name)}</p>
-        <p>{props.trailResponse[1].name}</p>
         </div>
         : null
       }
@@ -34,4 +29,3 @@ const trail = (props) => {
 
 export default trail;
 
-{/* <img class="" src={`https://www.mapquestapi.com/staticmap/v5/map?locations=${location}8&key=bW5J6NVA1gT64FrRBRViGqTYVcfkUq7F`} alt=""></img> */ }
