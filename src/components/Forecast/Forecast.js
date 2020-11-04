@@ -61,18 +61,11 @@ const Forecast = () => {
           />
                     Celcius
         </label>
-        <button>sumbit</button>
+        <input type="submit" value="Get Forecast"/>
       </form>
       <Conditions 
         responseObj={responseObj}
         />
-      <div>
-        <h2>Find Current Weather Conditions</h2>
-        <button onClick={getForecast}>Get Forecast</button>
-        <Conditions
-          responseObj={responseObj}
-        />
-      </div>
     </div>
   )
 }
