@@ -39,7 +39,7 @@ const Forecast = () => {
           placeholder="Enter City"
           maxLength="50"
           value={city}
-          onChange={(e) => setCity(e.target.value)}
+          onChange={(event) => setCity(event.target.value)}
         /><br></br>
         <label>
           <input
@@ -47,7 +47,7 @@ const Forecast = () => {
             name="units"
             checked={unit === "imperial"}
             value="imperial"
-            onChange={(e) => setUnit(e.target.value)}
+            onChange={(event) => setUnit(event.target.value)}
           />
                     Fahrenheit
                 </label>
@@ -57,7 +57,7 @@ const Forecast = () => {
             name="units"
             checked={unit === "metric"}
             value="metric"
-            onChange={(e) => setUnit(e.target.value)}
+            onChange={(event) => setUnit(event.target.value)}
           />
                     Celcius
         </label><br></br>
