@@ -3,8 +3,10 @@ Lake Line is an app dedicated to finding hikes that put the hiker near a lake. I
 
 # Getting Started
 To start the server run `$ npm start`
-You will also need the back end api server running. See the repo [here](https://github.com/perryr16/lake_line) 
+You will also need the back end api server running. See the repo [here](https://github.com/perryr16/lake_line) for details on getting started
 
 visit localhost:3000 
+
+
 
 
