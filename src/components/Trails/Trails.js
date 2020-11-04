@@ -17,7 +17,7 @@ const Trails = () => {
   }
   
   return (
-    <div class="">
+    <div>
       <h2>Trails in DB</h2>
       <button onClick={getTrails}>GetTrails</button>
       <Trail
