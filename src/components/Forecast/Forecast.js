@@ -40,7 +40,7 @@ const Forecast = () => {
           maxLength="50"
           value={city}
           onChange={(e) => setCity(e.target.value)}
-        />
+        /><br></br>
         <label>
           <input
             type="radio"
@@ -60,7 +60,7 @@ const Forecast = () => {
             onChange={(e) => setUnit(e.target.value)}
           />
                     Celcius
-        </label>
+        </label><br></br>
         <input type="submit" value="Get Forecast"/>
       </form>
       <Conditions 
