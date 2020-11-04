@@ -3,6 +3,8 @@ import Conditions from '../Conditions/Conditions';
 
 
 const Forecast = () => {
+  let [city, setCity] = useState('')
+  let [unit, setUnit] = useState('imperial')
   let [responseObj, setResponseObj] = useState({})
   const getForecast = () => {
     fetch("https://community-open-weather-map.p.rapidapi.com/weather?q=Seattle", {
