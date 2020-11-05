@@ -11,14 +11,12 @@ class App extends Component{
     return (
       <BrowserRouter>
         <div className="App">
-          <div className="nav-bar">
             <Navigation/>
             <Switch>
               <Route path='/forecast' component={Forecast}/>
               <Route path='/trails' component={Trails}/>
               <Route path='/' component={Home}/>
             </Switch>
-          </div>
           <header className="App-header">
             <h1>Lake Line</h1>
           </header>

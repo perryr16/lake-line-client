@@ -32,20 +32,11 @@ h1{
   top:100px;
   color: darkgreen;
 }
-.nav-bar {
+/* .nav-bar {
   background-color:  #1d490c;
   color: rgb(221, 202, 202);
-}
-.nav-bar a {
-  padding: 10px;
-  text-decoration: none;
-  font-weight: bold;
-  color:  rgb(221, 202, 202);
-}
-.nav-bar a:hover {
-  background-color:rgb(53, 38, 38);
-  color: white;
-}
+} */
+
 .App-link {
   color: #61dafb;
 }
@@ -77,6 +68,13 @@ header {
   padding: 25px;
 }
 
-.nav-bar-2{
-  color: orange;
+.nav-bar2 a {
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color:  rgb(221, 202, 202);
+}
+.nav-bar2 a:hover {
+  background-color:rgb(53, 38, 38);
+  color: white;
 }
