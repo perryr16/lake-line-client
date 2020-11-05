@@ -29,7 +29,9 @@ body {
   background-color:#282c34;
 }
 h1{
-  top:100px;
+  color: rgb(20, 133, 89);
+}
+h2{
   color: rgb(20, 133, 89);
 }
 /* .nav-bar {
