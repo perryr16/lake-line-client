@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React, { useState } from 'react';
 import Trail from './Trail'
 
 const Trails = () => {
@@ -17,35 +17,14 @@ const Trails = () => {
   }
   
   return (
-    <div>
+    <div className='content'>
       <h2>Trails in DB</h2>
       <button onClick={getTrails}>GetTrails</button>
       <Trail
         trailResponse={trailResponseObj}
       />
-
     </div>
   )
 }
 
 export default Trails
-
-// export default class TrailsList extends React.Component{
-//   state={
-//     trails: []
-//   }
-//   componentDidMount() {
-//     axios.get(`http://localhost:4000/trails`)
-//       .then(res => {
-//         const trails = res.data;
-//         this.setState({ trails });
-//       })
-//   }
-//   render() {
-//     return (
-//       <ul>
-//         { this.state.trails.map(trail => <li>{trail.name}</li>)}
-//       </ul>
-//     )
-//   }
-// }

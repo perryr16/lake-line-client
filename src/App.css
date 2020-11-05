@@ -25,6 +25,19 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+body {
+  background-color:#282c34;
+}
+h1{
+  color: rgb(20, 133, 89);
+}
+h2{
+  color: rgb(20, 133, 89);
+}
+/* .nav-bar {
+  background-color:  #1d490c;
+  color: rgb(221, 202, 202);
+} */
 
 .App-link {
   color: #61dafb;
@@ -55,4 +68,26 @@ footer {
 }
 header {
   padding: 25px;
+}
+.nav-bar {
+  background-color:rgb(40, 78, 72);
+  padding: 15px;
+}
+.nav-bar a {
+  padding: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color:  rgb(221, 202, 202);
+}
+.nav-bar a:hover {
+  background-color:rgb(53, 38, 38);
+  color: white;
+}
+
+
+.content {
+  padding-left: 30px;
+}
+.content p{
+  color: rgb(93, 182, 148);
 }

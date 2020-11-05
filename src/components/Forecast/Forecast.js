@@ -30,7 +30,7 @@ const Forecast = () => {
       });
   }
   return (
-    <div>
+    <div className='content'>
       <h2>Find Current Weather Conditions</h2>
       {/* <button onClick={getForecast}>Get Forecast</button> */}
       <form onSubmit={getForecast}>
