@@ -2,6 +2,7 @@ import './App.css';
 import React, {Component} from 'react';
 import Forecast from "./components/Forecast/Forecast";
 import Trails from "./components/Trails/Trails";
+import Home from "./components/Home/Home";
 import Navigation from "./components/Navigation/Navigation";
 import { BrowserRouter, Route, Switch} from 'react-router-dom';
 
@@ -15,6 +16,7 @@ class App extends Component{
             <Switch>
               <Route path='/forecast' component={Forecast}/>
               <Route path='/trails' component={Trails}/>
+              <Route path='/' component={Home}/>
             </Switch>
           </div>
           <header className="App-header">

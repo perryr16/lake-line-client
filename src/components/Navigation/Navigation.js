@@ -3,8 +3,10 @@ import {NavLink} from 'react-router-dom';
 
 const Navigation = () => {
   return(
-    <div>
-      <p><NavLink to='/forecast'>Forecast</NavLink> <NavLink to='/trails'>Trails</NavLink></p>
+    <div className="nav-bar-2">
+      <NavLink to='/'>Home</NavLink>  
+      <NavLink to='/trails'>Trails</NavLink> 
+      <NavLink to='/forecast'>Forecast</NavLink>
     </div>
   );
 }

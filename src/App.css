@@ -17,8 +17,7 @@
 
 .App-header {
   background-color: #282c34;
-  /* min-height: 300px; */
-  height: 100vh;
+  min-height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,11 +25,27 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+body {
+  background-color:#282c34;
+}
 h1{
   top:100px;
   color: darkgreen;
 }
-
+.nav-bar {
+  background-color:  #1d490c;
+  color: rgb(221, 202, 202);
+}
+.nav-bar a {
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color:  rgb(221, 202, 202);
+}
+.nav-bar a:hover {
+  background-color:rgb(53, 38, 38);
+  color: white;
+}
 .App-link {
   color: #61dafb;
 }
@@ -60,4 +75,8 @@ footer {
 }
 header {
   padding: 25px;
+}
+
+.nav-bar-2{
+  color: orange;
 }
