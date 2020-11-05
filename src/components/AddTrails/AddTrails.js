@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 
-const AddTrails = (props) => {
+const AddTrails = () => {
   let [location, setLocation] = useState('')
-  let [addResponseObj, setAddResponseObj] = useState({})
+  // let [addResponseObj, setAddResponseObj] = useState({})
   const getAddTrails = (event) => {
     event.preventDefault()
     fetch(`http://localhost:4000/getTrails/populateDB?location=${location}&keyword=lake`, {
-      "method": "get"
+      "method": "GET"
     })
     .then(response => response.json())
-    .then(response => {
-      setAddResponseObj(response)
-    })
+    // .then(response => {
+    //   setAddResponseObj(response)
+    // })
     .catch(err => {
       console.log(err)
     })
@@ -31,9 +31,6 @@ const AddTrails = (props) => {
         </label>
         <input type='submit' value='add trails to db' />
       </form>
-      <div>
-        {props}
-      </div>
     </div>
   )
 }
