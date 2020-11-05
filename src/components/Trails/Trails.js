@@ -1,5 +1,6 @@
-import React, { useState} from 'react';
-import Trail from './Trail'
+import React, { useState } from 'react';
+import AddTrails from '../AddTrails/AddTrails'
+import Trail from './Trails'
 
 const Trails = () => {
   let [trailResponseObj, setTrailResponseObj] = useState({})
@@ -23,8 +24,6 @@ const Trails = () => {
       <Trail
         trailResponse={trailResponseObj}
       />
-
-
     </div>
   )
 }
