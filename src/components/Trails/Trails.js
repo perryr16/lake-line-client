@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import AddTrails from '../AddTrails/AddTrails'
 import Trail from './Trails'
 
 const Trails = () => {
@@ -29,23 +28,3 @@ const Trails = () => {
 }
 
 export default Trails
-
-// export default class TrailsList extends React.Component{
-//   state={
-//     trails: []
-//   }
-//   componentDidMount() {
-//     axios.get(`http://localhost:4000/trails`)
-//       .then(res => {
-//         const trails = res.data;
-//         this.setState({ trails });
-//       })
-//   }
-//   render() {
-//     return (
-//       <ul>
-//         { this.state.trails.map(trail => <li>{trail.name}</li>)}
-//       </ul>
-//     )
-//   }
-// }

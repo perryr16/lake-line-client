@@ -18,6 +18,7 @@ class App extends Component{
               <Route path='/trails' component={Trails}/>
               <Route path='/addTrails' component={AddTrails}/>
               <Route path='/' component={Home}/>
+              <Route component={Error} />
             </Switch>
         </div>
       </BrowserRouter>
