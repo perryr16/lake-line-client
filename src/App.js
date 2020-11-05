@@ -10,12 +10,15 @@ class App extends Component{
     return (
       <BrowserRouter>
         <div className="App">
+          <div className="nav-bar">
+            <Navigation/>
+            <Switch>
+              <Route path='/forecast' component={Forecast}/>
+              <Route path='/trails' component={Trails}/>
+            </Switch>
+          </div>
           <header className="App-header">
-          <Navigation/>
-          <Switch>
-            <Route path='/forecast' component={Forecast}/>
-            <Route path='/trails' component={Trails}/>
-          </Switch>
+            <h1>Lake Line</h1>
           </header>
         </div>
       </BrowserRouter>
