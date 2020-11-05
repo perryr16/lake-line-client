@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Trail from './Trails'
+import Trail from './Trail'
 
 const Trails = () => {
   let [trailResponseObj, setTrailResponseObj] = useState({})
