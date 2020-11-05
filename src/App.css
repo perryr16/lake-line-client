@@ -30,7 +30,7 @@ body {
 }
 h1{
   top:100px;
-  color: darkgreen;
+  color: rgb(20, 133, 89);
 }
 /* .nav-bar {
   background-color:  #1d490c;
@@ -80,4 +80,12 @@ header {
 .nav-bar a:hover {
   background-color:rgb(53, 38, 38);
   color: white;
+}
+
+
+.content {
+  padding-left: 30px;
+}
+.content p{
+  color: rgb(93, 182, 148);
 }

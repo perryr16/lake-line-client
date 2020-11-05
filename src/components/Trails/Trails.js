@@ -17,8 +17,8 @@ const Trails = () => {
   }
   
   return (
-    <div>
-      <h2>Trails in DB</h2>
+    <div className='content'>
+      <h1>Trails in DB</h1>
       <button onClick={getTrails}>GetTrails</button>
       <Trail
         trailResponse={trailResponseObj}

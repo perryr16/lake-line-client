@@ -2,8 +2,9 @@ import React from 'react';
 
 const home = () => {
   return (
-    <div>
+    <div className='content'>
       <h1>Lake Line</h1>
+      <p>Find a lake hike that suits you</p>
     </div>
   );
 }
