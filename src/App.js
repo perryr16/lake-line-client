@@ -17,9 +17,6 @@ class App extends Component{
               <Route path='/trails' component={Trails}/>
               <Route path='/' component={Home}/>
             </Switch>
-          <header className="App-header">
-            <h1>Lake Line</h1>
-          </header>
         </div>
       </BrowserRouter>
     )
