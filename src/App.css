@@ -107,4 +107,19 @@ header {
   color: white;
 }
 
-.trailList
+.scrollingBox {
+  background-color: rgba(0,0,0,0.5) !important;
+  border-radius: 10px;
+  color: #949494;
+  display: block;
+  width: 465px;
+  height: 425px;
+  padding: 1em;
+  overflow-y: scroll;
+  text-align: center;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: auto auto;
+}

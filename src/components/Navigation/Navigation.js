@@ -8,7 +8,6 @@ const Navigation = () => {
       <NavLink to='/forecast'>Forecast</NavLink>
       <NavLink to='/trails'>Trails</NavLink> 
       <NavLink to='/addTrails'>Add Trails</NavLink>
-      <NavLink to='/trails/:id'>Add Trails</NavLink>
     </div>
   );
 }
