@@ -91,3 +91,20 @@ header {
 .content p{
   color: rgb(93, 182, 148);
 }
+
+.nav-bar {
+  background-color:rgb(40, 78, 72);
+  padding: 15px;
+}
+.trailLink {
+  padding: 2px;
+  text-decoration: none;
+  font-weight: bold;
+  color:  rgb(221, 202, 202);
+}
+.trailLink:hover {
+  background-color:rgb(40, 78, 72);
+  color: white;
+}
+
+.trailList
