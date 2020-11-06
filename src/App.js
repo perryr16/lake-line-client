@@ -2,6 +2,7 @@ import './App.css';
 import React, {Component} from 'react';
 import Forecast from "./components/Forecast/Forecast";
 import Trails from "./components/Trails/Trails";
+import TrailByID from "./components/Trails/TrailByID";
 import AddTrails from "./components/AddTrails/AddTrails";
 import Home from "./components/Home/Home";
 import Navigation from "./components/Navigation/Navigation";
@@ -18,6 +19,7 @@ class App extends Component{
               <Route path='/trails' component={Trails}/>
               <Route path='/addTrails' component={AddTrails}/>
               <Route path='/' component={Home}/>
+              <Route path='/trailById/:id' component={TrailByID}/>
               <Route component={Error} />
             </Switch>
         </div>
