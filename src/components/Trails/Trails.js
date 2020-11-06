@@ -27,7 +27,7 @@ const Trails = () => {
           <input
             type="text"
             placeholder="(OPTIONAL) Enter Location or State"
-            maxLength="300"
+            style={{width:300}}
             value={location}
             onChange={(event) => setLocation(event.target.value)}
           />

@@ -17,7 +17,7 @@ const AddTrails = () => {
     })
   }
   return (
-    <div>
+    <div className='content'>
       <h2>Add Trails to DB</h2>
       <form onSubmit={getAddTrails}>
         <label>

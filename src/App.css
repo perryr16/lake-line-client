@@ -112,14 +112,29 @@ header {
   border-radius: 10px;
   color: #949494;
   display: block;
-  width: 465px;
-  height: 425px;
+  width: 50vw;
+  height: 70vh;
   padding: 1em;
   overflow-y: scroll;
-  text-align: center;
+  text-align: left;
 }
 
 .grid-2 {
   display: grid;
   grid-template-columns: auto auto;
+}
+.big {
+  font-size: 40px;
+}
+.map-img {
+  width: 40vw;
+}
+span {
+  color: rgb(221, 202, 202);;
+}
+.trailImg {
+  width: 200px;
+}
+.right {
+  margin-left: 10px
 }
