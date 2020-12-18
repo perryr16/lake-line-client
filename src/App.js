@@ -1,5 +1,7 @@
 import './App.css';
 import React, {Component} from 'react';
+import SnowMain from "./components/Snow/SnowMain";
+import NewsMain from "./components/News/NewsMain";
 import Forecast from "./components/Forecast/Forecast";
 import Trails from "./components/Trails/Trails";
 import TrailByID from "./components/Trails/TrailByID";
@@ -20,25 +22,13 @@ class App extends Component{
               <Route path='/addTrails' component={AddTrails}/>
               <Route path='/' component={Home}/>
               <Route path='/trailById/:id' component={TrailByID}/>
+              <Route path='/news' component={NewsMain}/>
+              <Route path='/snow' component={SnowMain}/>
               <Route component={Error} />
             </Switch>
         </div>
       </BrowserRouter>
     )
-  //   return (
-  //     <div className="App">
-  //       <header className="App-header">
-  //         <h1>Lake Line</h1>
-  //         <main>
-  //           <Forecast />
-  //           <Trails />
-  //         </main>
-  //         <footer>
-  //           Page created by Ross Perry
-  //         </footer>
-  //       </header>
-  //     </div>
-  //   );
    }
 }
 
